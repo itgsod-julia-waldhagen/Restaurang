@@ -1,26 +1,249 @@
 body {
     margin:0;
     background-color: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+header text {
+    margin-left: 20vw;
+    width: 60vw;
+}
+
+a {
+    text-decoration: none;
+    color: #f5f5f5;
+
+
+}
+
+a:hover {
+    color: #5a5a5a;
+}
+
+
+#header {
+    width: 80%;
+
+}
+
+
+.meny {
+    margin-top: 5vw;
+    margin-left: 10vw;
+    background-image: url('../img/background.png');
+    border-radius: 0.5vw;
+    width: 80vw;
+    height: 55vmax;
+    margin-bottom: 5vw;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.7);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.7);
+    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.7);
+}
+
+
+.meny table {
+    padding-top: 0.5vw;
+    margin-left: 2.5vw;
+}
+.meny table tr td {
+    padding: 2.5vw;
+}
+
+
+
+.hitta {
+    text-align: center;
+    margin-top: 5vw;
+    margin-left: 10vw;
+    background-image: url('../img/background.png');
+    border-radius: 0.5vw;
+    width: 80vw;
+    padding-bottom: 7vmax;
+    margin-bottom: 5vw;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.7);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.7);
+    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.7);
+}
+
+.hitta h1 {
+    padding-top: 5vw;
+    margin-top: 5vmax;
+}
+
+.hitta p {
+
+    margin-left: 10vw;
+    width: 60vw;
+
+}
+
+.hitta div {
+    margin-left: 20vw;
+}
+
+.hitta div p {
+    text-align: left;
+
+}
+
+
+.item {
+    border-radius: 1vw;
+    width: 20vw;
+    height: 20vw;
+}
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 20vw;
+	height: 20vw;
+    border-radius: 1vw;
+
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    text-align: center;
+	transform: rotateY(180deg);
+    background-color: #936c83;
 }
 
 #nav-bar{
+    z-index: 100000;
+
+    top: 0;
     width: 100%;
-    height: 10vh;
+    color: #f5f5f5;
+
     background-color: #936c83;
 
 }
+
+.fixed {
+    position: fixed;
+}
 #nav-bar ul {
+
+    margin-bottom:0;
     list-style: none;
     display: inline-block;
 }
 #nav-bar ul li {
     padding-left: 2vw;
     padding-right: 2vw;
-    padding-top: 0.2vw;
-    float:left;
+    margin-top: 0;
+    float: left;
+
+}
+
+#logo {
+    font-size: 2vw;
+    margin-left: -2vw ;
+    padding-right: 30vw;
+}
+
+#logo-image {
+    margin-top: -1.25vh;
+    width: 5vw;
+
 }
 
 #nav-bar ul li a {
 
     font-size: 2vw;
+}
+
+iframe {
+    margin-top: 4vmax;
+    width: 60vw;
+
+}
+
+#textbox-order {
+    margin-left: 7.5vw;
+}
+
+.text {
+    margin-left: 2vw;
+    text-align: center;
+    margin-top: 5vw;
+    float: left;
+    background-image: url('../img/background.png');
+    border-radius: 0.5vw;
+    width: 25vw;
+    padding-bottom: 2vmax;
+    margin-bottom: 5vw;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.7);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.7);
+    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.7);
+}
+
+.text p {
+    margin-left: 5vw;
+    width: 15vw;
+
+}
+
+
+.boka {
+    margin-left: 30vw;
+    text-align: center;
+    margin-top: 5vw;
+    float: left;
+    background-image: url('../img/background.png');
+    border-radius: 0.5vw;
+    width: 40vw;
+    padding-bottom: 5vmax;
+    margin-bottom: 5vw;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.7);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.7);
+    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.7);
+}
+.boka form {
+    width: 40vw;
+
+}
+.boka form div {
+    padding-bottom: 2vmax;
+    margin: 0;
+
+}
+.boka form textarea {
+    height: 20vmax;
+    width: 20vw;
+
 }
